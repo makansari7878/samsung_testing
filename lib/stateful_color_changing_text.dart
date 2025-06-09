@@ -20,7 +20,7 @@ class _StatefulColorChangingTextState extends State<StatefulColorChangingText> {
   @override
   void initState() {
     super.initState();
-    _currentTextColor = widget.initialTextColor; // Initialize with the given color
+    _currentTextColor = widget.initialTextColor;
   }
 
   void _toggleTextColor() {
@@ -37,9 +37,9 @@ class _StatefulColorChangingTextState extends State<StatefulColorChangingText> {
       color: Colors.grey[200],
       alignment: Alignment.center,
       child: Text(
-        widget.text, // Use the text from the widget property
+        widget.text,
         style: TextStyle(
-          color: _currentTextColor, // Use the stateful color for the text
+          color: _currentTextColor,
           fontSize: 24,
           fontWeight: FontWeight.bold,
         ),

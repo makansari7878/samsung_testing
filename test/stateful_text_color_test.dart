@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:samsung_testing/stateful_color_changing_text.dart';
-
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -10,7 +9,7 @@ void main() {
         home: Center(
           child: StatefulColorChangingText(
             text: 'Hello Golden!',
-            initialTextColor: Colors.blue, // Set initial text color to blue
+            initialTextColor: Colors.greenAccent, // Set initial text color to blue
           ),
         ),
       ),
