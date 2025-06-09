@@ -28,7 +28,7 @@ class _CounterScreenState extends State<CounterScreen> {
         color: Colors.cyan,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,          children: [
-          Text("count is -- ${counter.count}", style: TextStyle(color:    Colors.red, fontSize: 22),),  SizedBox(height: 20,),
+          Text("count is -- ${counter.count}", style: TextStyle(color:Colors.red, fontSize:22),),  SizedBox(height: 20,),
 
 
           ElevatedButton(

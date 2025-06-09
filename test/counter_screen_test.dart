@@ -17,12 +17,12 @@ void main(){
                 final res =  find.text('count is -- 0');
                 expect(res, findsOne);
 
-              /*  final Finder counterTextFinder = find.text('count is -- 0');
+                final Finder counterTextFinder = find.text('count is -- 0');
                   // Get the actual Text widget instance from the finder result
                 final Text counterTextWidget = tester.widget(counterTextFinder);
                   // Assert its style properties
                 expect(counterTextWidget.style?.color, Colors.red);
-                expect(counterTextWidget.style?.fontSize, 22.0);*/
+                expect(counterTextWidget.style?.fontSize, 22.0);
 
                 final res1 =  find.text('count is -- 1');
                 expect(res1, findsNothing);
@@ -36,5 +36,8 @@ void main(){
 
                 // test whether appbar is present
                 expect(find.byType(AppBar), findsOneWidget);
+
+                expect(find.text('count is -- 0'), findsNothing);
+                expect(find.text('count is -- 1'), findsOneWidget);
           });
 }
