@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:samsung_testing/counter_screen.dart';
+import 'package:samsung_testing/stateful_color_changing_text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home:Placeholder()
+      home:StatefulColorChangingText(text: 'ANSARI', initialTextColor: Colors.blue,)
     );
   }
 }
