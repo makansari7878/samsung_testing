@@ -6,6 +6,19 @@ plugins {
 }
 
 android {
+    flavorDimensions += listOf("version")
+    productFlavors {
+        create("free") {
+            dimension = "version"
+            applicationIdSuffix = ".free"
+            // Add other free-specific configurations here
+        }
+        create("paid") {
+            dimension = "version"
+            applicationIdSuffix = ".paid"
+            // Add other paid-specific configurations here
+        }
+    }
     namespace = "com.example.samsung_testing"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
